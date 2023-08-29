@@ -1,0 +1,29 @@
+* {
+    margin: 10px;
+}
+
+body {
+    background: #036666;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* for fixed when scrolling web page */
+.sticky-column {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* Add the cursor highlight styles */
+.cursor-highlight {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgba(54, 54, 54, 0.342);
+    border-radius: 50%;
+    transform: translate(-80%, -80%);
+    pointer-events: none; /* Allows clicks to pass through the highlight */
+    z-index: 9999; /* Ensures the highlight appears on top of other content */
+}
+
