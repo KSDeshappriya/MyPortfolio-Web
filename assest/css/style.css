@@ -27,3 +27,33 @@ body {
     z-index: 9999; /* Ensures the highlight appears on top of other content */
 }
 
+/* menu part */
+.menu {
+    position: relative;
+    padding-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-top: 20px;
+    background-color: #0000001e;
+    width: 200px;
+    transition: transform 0.5s ease;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(183, 183, 183);
+}
+
+/* Define the hover effect */
+.menu li:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 10px rgba(8, 173, 173, 0.2);
+}
