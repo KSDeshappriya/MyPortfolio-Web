@@ -1,0 +1,91 @@
+/* Global styles for dark theme */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Left component styles */
+  .left {
+    flex: 1;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+  }
+  
+  .name {
+    font-size: 24px;
+  }
+  
+  .subtext {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #888888;
+  }
+  
+  .jobStatus {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Right component styles */
+  .right {
+    flex: 2;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  .introduction h4,
+  .skills h4,
+  .education h4,
+  .experience h4,
+  .projects h4 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .content {
+    margin-top: 10px;
+  }
+  
+  .skill-category,
+  .tools-category {
+    margin-top: 10px;
+  }
+  
+  .resume-link {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .resume-link:hover {
+    background-color: #005baa;
+  }
+  
