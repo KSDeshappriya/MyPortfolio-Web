@@ -1,121 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kavindu's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assest/css/style.css">
-    <script src="./assest/js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assest/js/script.js"></script>
+  <link rel="stylesheet" href="assest/css/style.css" />
 </head>
 
-<body class="container">
-    <div class="page container-fluid">
-        <!-- Web Interface -->
-        <div class="interface row">
-
-            <!-- header section -->
-            <div class="header col-md">
-                <div class="sticky-column">
-                    <!-- header section content -->
-                    <div class="headerContent">
-                        <img src="./assest/img/avator.png" alt="avatar" style="width: 150px;" />
-                        <h1>Kavindu Shehan</h1>
-                        <h2>Leader of Future</h2>
-                        <p>I build accessible, inclusive products and digital experiences for the web.</p>
-                        <!-- menu part -->
-                        <ul class="menu" style="list-style-type:none;">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#experiences">Experiences</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                        </ul>
-
-                        <ul class="list-unstyled list-inline">
-                            <!-- Replace these links with your actual social media profiles -->
-                            <li class="list-inline-item">
-                                <a href="https://github.com/KSDeshappriya/" class="text-decoration-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                        class="h-6 w-6" aria-hidden="true">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-decoration-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="h-6 w-6" aria-hidden="true">
-                                        <path
-                                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-decoration-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H1.5A1.5 1.5 0 0 1 0 12.5v-9zM1.293 4.293 8 9.586 14.707 4.293A.25.25 0 0 1 15 4.5v7a.25.25 0 0 1-.25.25H1.25a.25.25 0 0 1-.177-.073L.146 11.354a.5.5 0 0 1 0-.708L7.293 4.293a1.5 1.5 0 0 1 2.414 0L15.854 10H1.5a.5.5 0 0 0-.5.5v-7a.5.5 0 0 0 .293.455z"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-decoration-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6" aria-hidden="true">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.20-.82 2.20-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- Add more social media icons here as needed -->
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- main content section -->
-            <div class="main col-md">
-                <!-- about section -->
-                <div class="about" id="about">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, asperiores alias. Saepe accusamus
-                    praesentium iste aliquid ipsum beatae nostrum provident vitae ducimus. Accusantium, voluptatum
-                    maiores voluptas, minus harum, sint vero odit corporis eos quod delectus rem assumenda? Error
-                    laudantium est voluptatibus nemo labore sapiente consequatur iusto, quis omnis molestias adipisci.
-                </div>
-                <!-- experience section -->
-                <div class="experiences" id="experiences">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui pariatur ipsa, culpa facilis dicta ad
-                    aliquam illum. Ratione vel qui temporibus perferendis ipsam nulla impedit quas modi omnis tempore
-                    autem recusandae praesentium nesciunt enim inventore voluptatem, voluptas repellendus accusantium
-                    mollitia distinctio in. Magnam suscipit veritatis officia, ullam accusamus nostrum illo.
-                </div>
-                <!-- projects section -->
-                <div class="projects" id="projects">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident mollitia eius fugiat rem error
-                    doloremque blanditiis officiis a temporibus ipsum! Temporibus esse recusandae neque pariatur beatae?
-                    Nam quas atque animi in odit illo corrupti, ut fuga quod, dolor consectetur explicabo ipsa quisquam
-                    doloremque, sed corporis! Fugit totam neque ex eligendi.
-                </div>
-                <!-- toFuture section -->
-                <div class="toFuture" id="toFuture">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, numquam sed! Perferendis et
-                    corrupti fuga temporibus praesentium, nesciunt doloremque eveniet reprehenderit voluptate inventore.
-                    Minus voluptas laborum odit fugit quisquam dicta aliquid, voluptatum odio voluptatibus non iusto
-                    pariatur nam doloribus sequi beatae laboriosam, ex repellat sunt? Tempore obcaecati expedita eius
-                    possimus!
-                </div>
-                <!-- furthermore -->
-            </div>
-
+<body>
+  <div id="content">
+    <div class="app">
+      <div class="left">
+        <div class="left-inner">
+          <div class="info">
+            <!-- content of info -->
+            <img src="./assest/img/avator.png" alt="avatar" style="width: 150px" />
+            <h1>Kavindu Shehan</h1>
+            <h2>Leader of Future</h2>
+            <p> I build accessible, inclusive products and digital experiences for the web.</p>
+            <!-- menu part -->
+            <ul class="menu" style="list-style-type: none">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experiences">Experiences</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="right">
+        <div class="right-inner">
+          <div class="introduction">
+            <h4>Intro</h4>
+            <div class="content">
+              <!-- content of intro -->
+            </div>
+          </div>
+          <div class="skills">
+            <h4>Skills</h4>
+            <div class="content">
+              <!-- content of skills -->
+            </div>
+          </div>
+          <div class="education">
+            <h4>Education</h4>
+            <div class="content">
+              <!-- content of education -->
+            </div>
+          </div>
+          <div class="experience">
+            <h4>Experience</h4>
+            <div class="content">
+              <!-- content of experience -->
+            </div>
+          </div>
+          <div class="projects">
+            <h4>Projects</h4>
+            <div class="content">
+              <!-- content of projects -->
+            </div>
+          </div>
+          <p class="content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Distinctio, eaque architecto? Facilis illo accusantium sint saepe,
+            consectetur dignissimos iste iure quisquam inventore atque
+            quibusdam, consequatur quos minima perspiciatis corporis
+            exercitationem nemo! Quos, autem voluptas possimus magni vero
+            illum nisi commodi facere magnam. Labore dolorem, dicta cum ullam
+            delectus in dolor illum id? Similique, provident quia natus iusto
+            eos quam facere consequuntur quo! Repellat veritatis delectus
+            consectetur ex, minima reiciendis, porro minus sed obcaecati iusto
+            iure id nemo aspernatur dolorum autem itaque, nostrum nobis
+            aliquam aliquid? Dolores architecto voluptatum quo in, cumque
+            expedita laboriosam iusto voluptate. Est error, officia atque,
+            quae repellat velit cumque minus accusamus magni facere similique
+            at dolore suscipit totam voluptates omnis non quam! Cum labore
+            quos iste laboriosam exercitationem eaque facilis repellat
+            provident natus possimus pariatur quas neque minus deleniti
+            doloribus omnis suscipit incidunt consequatur amet itaque, eius
+            officia ipsam! Deleniti, doloremque. Modi molestias accusamus
+            inventore vero sequi? Beatae magnam deleniti assumenda ipsam vel
+            rem sunt odit hic. Commodi quidem facere officiis earum quibusdam,
+            nisi esse necessitatibus quo laudantium, nemo laborum, hic soluta
+            corrupti possimus ab labore. Deleniti officia animi natus placeat
+            quisquam nesciunt. Magni, vel nostrum qui odio dolore quibusdam
+            totam quis obcaecati nisi unde optio velit consequuntur? Dicta aut
+            maxime, ducimus vitae eaque nostrum tempore necessitatibus. Quod
+            ipsa aperiam, enim magnam quasi saepe nesciunt error atque esse
+            assumenda dolore dicta qui, necessitatibus possimus iusto
+            cupiditate accusamus autem dolorem deserunt praesentium nihil
+            ipsum. Commodi, ipsa culpa incidunt delectus, ducimus libero quis
+            est illum nesciunt dolor expedita cupiditate aliquam aut ullam
+            quod odio. Accusamus ipsam quas officia nesciunt expedita fuga
+            consectetur eum quisquam aspernatur non, odit quod. Eos dolorem
+            velit quisquam reprehenderit? Nulla, odio? Modi unde ut nisi
+            soluta vitae, eveniet eum itaque alias fugit id minima placeat
+            architecto aliquid, dicta corrupti maiores quo illo, ad accusamus
+            exercitationem dignissimos nostrum repudiandae perferendis!
+            Architecto quisquam eaque maiores, dolorem blanditiis illum
+            corrupti ut quidem est voluptatem commodi doloremque enim delectus
+            fugit quaerat amet ea iste perspiciatis odio ad officia deserunt
+            asperiores. Quis perferendis inventore impedit nesciunt illo. Quia
+            doloribus alias dolorum soluta explicabo consectetur ea possimus,
+            fugit at, consequuntur voluptatibus, minima molestias excepturi
+            corporis facere tempora repellat blanditiis provident aperiam
+            odio! Vitae numquam omnis, nesciunt aliquam voluptatibus deserunt
+            et aut rerum pariatur eveniet dignissimos quo repellat libero,
+            dolor magni alias. Nostrum assumenda iure autem fuga, molestias
+            facere voluptate voluptas perferendis ex magnam eligendi, sed aut
+            mollitia iste expedita quaerat doloremque totam necessitatibus qui
+            molestiae aperiam sapiente? Nobis excepturi laboriosam tempora ea,
+            iusto accusamus vitae ducimus? Numquam, culpa vitae! Consectetur
+            quo aliquid vel impedit? Quos sunt optio, ab minima ad officiis
+            quod eos explicabo a suscipit molestiae accusantium et aliquam
+            atque, ipsum amet odit sapiente impedit veritatis neque. Eos,
+            optio qui. Provident ipsa molestiae recusandae rerum, iusto est
+            beatae expedita odio! Assumenda corrupti voluptate fugiat commodi
+            totam quia libero dolore corporis enim, debitis atque nobis
+            suscipit consequuntur blanditiis sequi possimus laboriosam,
+            reiciendis sed odit placeat numquam tenetur quibusdam officiis
+            veniam. Beatae corporis fugiat totam possimus eligendi omnis sunt
+            quae aspernatur facere! Veniam repellendus, incidunt beatae
+            explicabo reiciendis soluta aspernatur quis aliquid itaque porro.
+            Voluptatem sunt hic labore dolorem reiciendis vero nemo ex a
+            sequi, neque, beatae possimus aspernatur iusto! Sint adipisci
+            ipsam eligendi quisquam, molestias dolorum mollitia accusamus
+            assumenda error sequi commodi nisi. Saepe voluptatem sed
+            accusantium! Et nam fugiat mollitia facilis, aspernatur fugit
+            maiores quae magni doloribus repudiandae eos voluptatum
+            consequatur, reprehenderit recusandae perspiciatis ad amet
+            deserunt similique dolores delectus laborum labore quasi
+            obcaecati! Ea dicta facere officia nemo nostrum earum voluptate
+            dolores maxime eaque error soluta, iure quia. Rerum expedita porro
+            repudiandae vero atque id animi nihil. Fugit id error excepturi ad
+            cupiditate cumque iusto saepe culpa eius temporibus veritatis
+            commodi magni qui ipsa sit earum ipsam quidem deleniti, maiores
+            quos tempore voluptates similique suscipit. Aut repellat
+            voluptates debitis ipsum laudantium corrupti, dolorum consequuntur
+            eaque perferendis aperiam voluptate consequatur architecto eos
+            illum saepe neque animi nisi doloremque quod magnam vero
+            asperiores corporis voluptatibus nam? Totam, delectus laborum. Et
+            similique atque ipsum amet sapiente quae vitae molestias assumenda
+            dolore adipisci dolorum velit odio nobis, ipsam debitis
+            accusantium nam ea suscipit voluptatibus tempora! Eum saepe
+            accusamus ipsam iste. Voluptas accusamus deserunt, asperiores
+            blanditiis atque eius corporis rerum optio numquam porro amet
+            dicta laborum natus eveniet adipisci vitae quod eligendi magnam.
+            Odio totam ullam ab molestiae accusamus voluptate repellendus
+            dolores provident atque, nulla temporibus fuga earum aspernatur
+            necessitatibus nostrum dolorum accusantium dolore quas aut
+            cupiditate amet autem? Dolorum ratione inventore, id facilis
+            asperiores beatae ducimus, voluptate quae placeat eaque officia!
+            Vitae ipsum ab, alias nisi ipsam, voluptatibus laboriosam animi
+            voluptatem rem id quam? Quasi, recusandae ea rerum hic nihil
+            soluta et nemo rem tempora. Pariatur quibusdam repudiandae sint
+            quasi est totam aliquid nihil hic earum accusamus, unde, molestiae
+            architecto, magni excepturi! Exercitationem dolores error quia
+            totam. Asperiores laudantium quidem quos dignissimos atque aliquid
+            sit sed unde, officia neque quasi, provident minima a natus ullam.
+            Sapiente numquam error mollitia ducimus aperiam perspiciatis
+            nihil. Dolorem tempora nostrum in, atque sit optio quam ipsa sunt
+            dolores aperiam soluta omnis quia reiciendis? Maxime asperiores
+            nihil placeat fugit, molestias quos sunt, repudiandae facilis
+            repellat quaerat accusamus neque fugiat nobis? Tempora nam facilis
+            ex corrupti nihil labore? A rem minima officia aut dignissimos
+            ipsam, perspiciatis, adipisci doloribus voluptatum explicabo
+            maxime incidunt quaerat expedita optio voluptates? Aliquam minima
+            ducimus aperiam modi fugit repellendus accusamus? Asperiores
+            perferendis libero consectetur animi consequatur saepe, cum earum.
+            Assumenda sint consectetur labore natus ad veniam perferendis,
+            voluptates debitis sit vel omnis molestiae cupiditate, dolorem
+            optio et repellendus velit vitae amet enim? Cupiditate perferendis
+            numquam porro laborum non dolorem labore dicta assumenda sit
+            temporibus minus dolores praesentium amet iure quis nemo
+            consequatur laudantium et dignissimos, nulla provident. Velit,
+            quidem. Fuga voluptate magni iusto mollitia accusantium quaerat
+            nihil neque vel quas rerum, ipsum velit! Dicta ipsa laboriosam
+            veniam ipsam sed delectus adipisci necessitatibus sequi porro.
+            Dolorum amet tenetur corporis saepe. Dolore natus ea odio corporis
+            asperiores explicabo dicta molestias unde. Id non cupiditate
+            laudantium sed. Quo fugiat eos quisquam officia culpa. Officiis
+            dignissimos eum hic.
+          </p>
+          <a class="resume" href="#" target="_blank">
+            <div class="resume-link">Grab a PDF of my full resume</div>
+          </a>
+        </div>
+      </div>
     </div>
-    <!-- Add the cursor highlight element -->
-    <div class="cursor-highlight"></div>
+  </div>
+  <!-- Add the cursor highlight element -->
+  <div class="cursor-highlight"></div>
 </body>
 
 </html>
