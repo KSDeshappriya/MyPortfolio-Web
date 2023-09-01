@@ -1,8 +1,3 @@
-/* Reset and global styles */
-/* Left and right columns */
-/* Responsive styles */
-/* Right column */
-/* More right column styles... */
 html {
   font-family: "Catamaran", sans-serif;
   margin: 0;
@@ -66,6 +61,14 @@ a {
   color: #fff;
 }
 
+.left-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24em;
+  height: 100%;
+}
+
 .right {
   width: 50%;
   display: inline-block;
@@ -127,15 +130,6 @@ a {
   margin: 40px;
 }
 
-.left-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 24em;
-  height: 100%;
-}
-
-/* Add the cursor highlight style */
 .cursor-highlight {
   width: 100px;
   height: 100px;
@@ -147,7 +141,6 @@ a {
   z-index: 9999;
 }
 
-/* menu part */
 .menu {
   position: relative;
   padding-top: 10px;

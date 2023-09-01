@@ -1,3 +1,4 @@
+// Reset and global styles
 $color_1: #efefef;
 $color_2: #fff;
 $color_3: #000;
@@ -5,11 +6,6 @@ $font-family_1: 'Catamaran', sans-serif;
 $background-color_1: #f5f5f5;
 $background-color_2: #f1f1f1;
 
-/* Reset and global styles */
-/* Left and right columns */
-/* Responsive styles */
-/* Right column */
-/* More right column styles... */
 html {
 	font-family: $font-family_1;
 	margin: 0;
@@ -30,6 +26,7 @@ a {
 	text-decoration: none;
 }
 
+// left column
 .left {
 	width: 50%;
 	display: inline-block;
@@ -81,6 +78,15 @@ a {
 	}
 }
 
+.left-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 24em;
+	height: 100%;
+}
+
+// right column
 .right {
 	width: 50%;
 	display: inline-block;
@@ -150,15 +156,7 @@ a {
 	margin: 40px;
 }
 
-.left-inner {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 24em;
-	height: 100%;
-}
-
-/* Add the cursor highlight style */
+// Add the cursor highlight style
 .cursor-highlight {
 	width: 100px;
 	height: 100px;
@@ -170,7 +168,7 @@ a {
 	z-index: 9999;
 }
 
-/* menu part */
+// menu part
 .menu {
 	position: relative;
 	padding-top: 10px;
@@ -200,6 +198,7 @@ a {
 	}
 }
 
+// Responsive styles
 @media screen and (max-width: 1000px) {
 	.left {
 		.info {
