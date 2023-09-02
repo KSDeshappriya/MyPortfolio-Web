@@ -22,10 +22,6 @@ body {
 	letter-spacing: 0.3px;
 }
 
-a {
-	text-decoration: none;
-}
-
 // left column
 .left {
 	width: 50%;
@@ -93,67 +89,21 @@ a {
 	vertical-align: top;
 	float: right;
 
-	a {
-		color: $color_3;
-	}
-
-	h4 {
-		width: 20%;
-		margin: 0 0 20px;
-		text-transform: uppercase;
-		font-size: 14px;
-		background: linear-gradient(45deg, #2A54F5 0%, #33E5BB 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
-	ul {
-		padding: 0;
-		margin: 0;
-	}
-
 	.content {
-		width: 80%;
 		padding: 0;
-		margin: 0 0 50px;
+		margin: 0 0 10px;
 		font-weight: 300;
 		line-height: 1.5;
 
-		ul.description {
-			padding-left: 20px;
-			margin-top: 10px;
-			font-size: 15px;
-		}
-	}
-
-	a.resume {
-		display: block;
-		width: 100%;
-		max-width: 500px;
-		margin: 0 auto;
-		text-align: center;
-		padding: 15px 0;
-		background-color: $background-color_1;
-		border-radius: 5px;
-		transition: all 0.3s ease;
-
-		&:hover {
-			background-color: $background-color_2;
-		}
-
-		.resume-link {
-			font-weight: 700;
-			font-size: 16px;
-			text-transform: uppercase;
-			background: linear-gradient(45deg, #2A54F5 0%, #33E5BB 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+		p {
+			text-align: justify;
 		}
 	}
 }
 
 .right-inner {
 	margin: 40px;
+	margin-right: 80px;
 }
 
 // Add the cursor highlight style
@@ -202,8 +152,135 @@ a {
 	}
 }
 
+// timeline
+.timeline-1 {
+	border-left: 3px solid #b565a7;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	background: rgba(177, 99, 163, 0.09);
+	margin: 0 auto;
+	position: relative;
+	padding: 50px;
+	margin-right: 20px;
+	list-style: none;
+	text-align: left;
+	max-width: 40%;
+
+	.event {
+		border-bottom: 1px dashed #000;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		position: relative;
+
+		&:last-of-type {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border: none;
+		}
+
+		&:before {
+			position: absolute;
+			display: block;
+			top: 0;
+			left: -207px;
+			content: attr(data-date);
+			text-align: right;
+			font-weight: 100;
+			font-size: 0.9em;
+			min-width: 120px;
+		}
+
+		&:after {
+			position: absolute;
+			display: block;
+			top: 0;
+			-webkit-box-shadow: 0 0 0 3px #b565a7;
+			box-shadow: 0 0 0 3px #b565a7;
+			left: -55.8px;
+			background: #fff;
+			border-radius: 50%;
+			height: 9px;
+			width: 9px;
+			content: "";
+			top: 5px;
+		}
+	}
+}
+
+// edu-cards
+.card {
+	border: none;
+}
+
+.card-img {
+	border-radius: 0;
+}
+
+.vgr-cards {
+	.card {
+		display: flex;
+		flex-flow: wrap;
+		flex: 100%;
+		margin-bottom: 40px;
+
+		&:nth-child(even) .card-img-body {
+			order: 2;
+		}
+
+		&:nth-child(even) .card-body {
+			padding-left: 0;
+			padding-right: 1.25rem;
+		}
+
+		@media (max-width: 576px) {
+			display: block;
+		}
+
+	}
+
+	.card-img-body {
+		flex: 1;
+		overflow: hidden;
+		position: relative;
+
+		@media (max-width: 576px) {
+			width: 100%;
+			height: 200px;
+			margin-bottom: 20px;
+		}
+
+	}
+
+	.card-img {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		margin-left: 50%;
+		transform: translateX(-50%);
+
+		@media (max-width: 1140px) {
+			margin: 0;
+			transform: none;
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+	.card-body {
+		flex: 2;
+		padding: 0 0 0 1.25rem;
+
+		@media (max-width: 576px) {
+			padding: 0;
+		}
+
+	}
+}
+
+
 // Responsive styles
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 	.left {
 		.info {
 			margin-top: 300px;
@@ -218,15 +295,9 @@ a {
 		display: block;
 		width: 100%;
 	}
-}
-
-@media screen and (max-width: 400px) {
-	.left-inner {
-		padding: 40px;
-	}
 
 	.right-inner {
-		padding: 40px;
+		margin-right: 40px;
 	}
 }
 
@@ -243,5 +314,34 @@ a {
 			vertical-align: top;
 			width: 100%;
 		}
+	}
+
+	.right-inner {
+		margin-right: 40px;
+	}
+
+	.timeline-1 {
+		max-width: 98%;
+		padding: 25px;
+
+		.event {
+			padding-top: 30px;
+
+			&:before {
+				left: 0px;
+				text-align: left;
+			}
+
+			&:after {
+				left: -31.8px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		width: 480px;
+		margin: 0 auto;
 	}
 }

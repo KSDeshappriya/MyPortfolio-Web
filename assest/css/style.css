@@ -14,10 +14,6 @@ body {
   letter-spacing: 0.3px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .left {
   width: 50%;
   display: inline-block;
@@ -75,59 +71,19 @@ a {
   vertical-align: top;
   float: right;
 }
-.right a {
-  color: #000;
-}
-.right h4 {
-  width: 20%;
-  margin: 0 0 20px;
-  text-transform: uppercase;
-  font-size: 14px;
-  background: linear-gradient(45deg, #2A54F5 0%, #33E5BB 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.right ul {
-  padding: 0;
-  margin: 0;
-}
 .right .content {
-  width: 80%;
   padding: 0;
-  margin: 0 0 50px;
+  margin: 0 0 10px;
   font-weight: 300;
   line-height: 1.5;
 }
-.right .content ul.description {
-  padding-left: 20px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.right a.resume {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 15px 0;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.right a.resume:hover {
-  background-color: #f1f1f1;
-}
-.right a.resume .resume-link {
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-  background: linear-gradient(45deg, #2A54F5 0%, #33E5BB 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.right .content p {
+  text-align: justify;
 }
 
 .right-inner {
   margin: 40px;
+  margin-right: 80px;
 }
 
 .cursor-highlight {
@@ -170,7 +126,119 @@ a {
   box-shadow: 0 0 10px rgba(8, 173, 173, 0.2);
 }
 
-@media screen and (max-width: 1000px) {
+.timeline-1 {
+  border-left: 3px solid #b565a7;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(177, 99, 163, 0.09);
+  margin: 0 auto;
+  position: relative;
+  padding: 50px;
+  margin-right: 20px;
+  list-style: none;
+  text-align: left;
+  max-width: 40%;
+}
+.timeline-1 .event {
+  border-bottom: 1px dashed #000;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.timeline-1 .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline-1 .event:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -207px;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+.timeline-1 .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  box-shadow: 0 0 0 3px #b565a7;
+  left: -55.8px;
+  background: #fff;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  content: "";
+  top: 5px;
+}
+
+.card {
+  border: none;
+}
+
+.card-img {
+  border-radius: 0;
+}
+
+.vgr-cards .card {
+  display: flex;
+  flex-flow: wrap;
+  flex: 100%;
+  margin-bottom: 40px;
+}
+.vgr-cards .card:nth-child(even) .card-img-body {
+  order: 2;
+}
+.vgr-cards .card:nth-child(even) .card-body {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card {
+    display: block;
+  }
+}
+.vgr-cards .card-img-body {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card-img-body {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+.vgr-cards .card-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1140px) {
+  .vgr-cards .card-img {
+    margin: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+}
+.vgr-cards .card-body {
+  flex: 2;
+  padding: 0 0 0 1.25rem;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card-body {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
   .left {
     display: block;
     width: 100%;
@@ -183,13 +251,8 @@ a {
     display: block;
     width: 100%;
   }
-}
-@media screen and (max-width: 400px) {
-  .left-inner {
-    padding: 40px;
-  }
   .right-inner {
-    padding: 40px;
+    margin-right: 40px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -202,5 +265,28 @@ a {
     display: block;
     vertical-align: top;
     width: 100%;
+  }
+  .right-inner {
+    margin-right: 40px;
+  }
+  .timeline-1 {
+    max-width: 98%;
+    padding: 25px;
+  }
+  .timeline-1 .event {
+    padding-top: 30px;
+  }
+  .timeline-1 .event:before {
+    left: 0px;
+    text-align: left;
+  }
+  .timeline-1 .event:after {
+    left: -31.8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    width: 480px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
