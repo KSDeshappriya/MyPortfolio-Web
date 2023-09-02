@@ -134,8 +134,12 @@ a {
   width: 100px;
   height: 100px;
   position: absolute;
-  background-color: rgba(54, 54, 54, 0.342);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
   border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   transform: translate(-80%, -80%);
   pointer-events: none;
   z-index: 9999;

@@ -4,10 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let scr = 0;
 
-    window.addEventListener("scroll", () => {
-        // Get the number of pixels scrolled vertically
-        scr = window.scrollY;
-    });
+    window.onscroll = () => {
+        const scrollY = window.scrollY;
+        const position = 0;
+    
+        if (scrollY > position) {
+            cursorHighlight.style.position = "fixed";
+        }
+    };
 
     document.addEventListener('mousemove', (e) => {
         const mouseX = e.clientX;
