@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <style>
+        .typed-cursor {
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span class="TypeWirter_effect"></span></h1><span class="lang"></span>
+   
+   <script type="text/javascript">
+        $(function () {
+            $('.TypeWirter_effect').typed({
+                strings: ['Want to learn Coding?', 'Want to learn '],
+                typeSpeed: 50,
+                backDelay: 3000,
+                callback: function () { showLang(); $('.typed-cursor').first().hide(); }
+            });
+        });
+        function showLang() {
+            $('.lang').typed({
+                strings: ['C++', 'Java', 'Python'],
+                typeSpeed: 50,
+                backDelay: 2000,
+                loop: true
+            });
+        }
+    </script>
+
+</body>
+
+</html>

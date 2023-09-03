@@ -11,6 +11,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script src="./assest/js/script.js"></script>
   <link rel="stylesheet" href="assest/css/style.css" />
 </head>
@@ -24,7 +26,7 @@
             <!-- content of info -->
             <img src="./assest/img/avator.png" alt="avatar" style="width: 150px" />
             <h1>Kavindu Shehan</h1>
-            <h2>Leader of Future</h2>
+            <div class="tdiv"><span id="type"></span></div>
             <p> I build accessible, inclusive products and digital experiences for the web.</p>
             <!-- menu part -->
             <center>
@@ -278,5 +280,16 @@
   <!-- Add the cursor highlight element -->
   <div class="cursor-highlight"></div>
 </body>
+<script>
+  $(function () {
+    $('#type').typed({
+      strings: ['Leader of Future', 'Full-Stack Developer', 'Writer'],
+      typeSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+      callback: function () {$('.typed-cursor').first().hide(); }
+    });
+  });
+</script>
 
 </html>
